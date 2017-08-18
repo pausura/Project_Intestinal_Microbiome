@@ -37,6 +37,8 @@ for (i in 1:ncol(factor_table)) {
   rownames(my_results) = colnames(factor_table)
   colnames(my_results) = c("Df", "R2", "Pr(>F)")
   
+    adonis_test <- as.data.frame(my_results)
+  
   write.table(my_results, file="~/adonis_results.txt", quote=F, sep = "\t")
   
   
@@ -97,10 +99,14 @@ for (i in 1:ncol(factor_table)) {
   #Change colnames
     colnames(final_adonis_results)[5] <- "FDR_p_value"
     colnames(final_adonis_results)[6] <- "Bonferroni_p_value"
-    
-  
   
     write.table(final_adonis_results, file="~/final_adonis_results.txt", sep= "\t", quote = F)
     
+  
+    #Select only the factors with FDR_values < 0.1
+  significative_adonis <- subset(final_adonis_results, final_adonis_results$FDR_p_value<0.1)
     
+    write.table(significative_adonis, file="~/significative_factors_adonis.txt", sep = "\t", quote = F)
+    
+      
     

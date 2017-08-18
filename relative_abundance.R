@@ -45,16 +45,16 @@ total_data <- merge(intestinal_categories, tax_table, by="row.names")
    sum (x!=0)
  }
 
-my_results=matrix(ncol = 4, nrow=ncol(table_smallintestine)) 
+my_results=matrix(ncol = 4, nrow=ncol(total_data)) 
   
 ## Loop
 
-for (i in 1:ncol(table_smallintestine)) {
+for (i in 1:ncol(total_data)) {
   
-  x = nzmean(table_smallintestine[,i])
-  y = mean(table_smallintestine[,i])
-  z = nzsum(table_smallintestine[,i])
-  a = nsum(table_smallintestine[,i])
+  x = nzmean(total_data[,i])
+  y = mean(total_data[,i])
+  z = nzsum(total_data[,i])
+  a = nsum(total_data[,i])
   
   my_results[i,1] = x
   my_results[i,2] = y
@@ -64,7 +64,7 @@ for (i in 1:ncol(table_smallintestine)) {
 }
 
 # The column names from the original table = row names from the new table
-rownames(my_results) = colnames(table_smallintestine)
+rownames(my_results) = colnames(total_data)
 
 # Give names to the columns of the new table
 colnames(my_results) = c("Non-zero mean (I)", "Mean (I)", "Nº of 0 (I)", "Nº of non-0 (I)") 
