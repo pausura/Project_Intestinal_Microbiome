@@ -1,6 +1,8 @@
 #### FUNCTIONS FILE ####
 
-##Filter data function
+######################
+#Filter data function#
+######################
 filter_data <- function(tax_input, metadata_input, parameter_file, parameter_threshold, metadata_threshold) {
   
   ##Filter the parameter_file by the given threshold
@@ -42,8 +44,9 @@ filter_data <- function(tax_input, metadata_input, parameter_file, parameter_thr
   
 }
 
-
-##Taxonomy level function
+#########################
+#Taxonomy level function#
+#########################
 level_function <- function(taxonomy_table,level_taxonomy) {
   
   #Transpose taxonomy table
@@ -87,8 +90,9 @@ level_function <- function(taxonomy_table,level_taxonomy) {
   
 }
 
-
-##Shannon Index function
+########################
+#Shannon Index function#
+########################
 shannon_function <- function(level_table, group_table) {
   
   ##Required packages - shannon diversity/ggplot
@@ -129,8 +133,9 @@ shannon_function <- function(level_table, group_table) {
   
 }
 
-
-##Taxonomy_composition function
+###############################
+#Taxonomy_composition function#
+###############################
 tax_composition_differences <- function(tax_level_table, category_table, top_tax_value) {
   
   # Merge tax_level_table with category_table file  
@@ -219,8 +224,9 @@ tax_composition_differences <- function(tax_level_table, category_table, top_tax
   
 }
 
-
-##Table1 function
+##################
+#Table1 function#
+##################
 calculate_table1 <- function (metadata_input, category_table) {
   
   # Create other functions to calculate the different parameters
@@ -371,8 +377,9 @@ calculate_table1 <- function (metadata_input, category_table) {
   
 }
 
-
-##PCoA analysis function
+########################
+#PCoA analysis function#
+########################
 pcoa_function <- function(tax_level_table, pcoa_elements, variable_table, top_value) {
   
   ##Required packages
@@ -510,8 +517,9 @@ pcoa_function <- function(tax_level_table, pcoa_elements, variable_table, top_va
   
 }
 
-
-##Clustering dendrogram function
+################################
+#Clustering dendrogram function#
+################################
 clustering_dendrogram <- function(tax_level_table, category_table, category_number) {
   
   #Packages needed
@@ -572,6 +580,9 @@ clustering_dendrogram <- function(tax_level_table, category_table, category_numb
   dev.off()
 }
 
+################################
+#Taxonomy abundance + filtering#
+################################
 taxonomy_abundance <- function(taxonomy_table,abundance_value,individuals_value) {
   
   ##Function to calculate mean excluding 0 values
@@ -636,9 +647,11 @@ taxonomy_abundance <- function(taxonomy_table,abundance_value,individuals_value)
   ##Remove Mean column
   t_filtered_taxonomy_table <- t_filtered_taxonomy_table[,-1]
   
+  #Remove duplicated rows and keep the last one
+  t_filtered_taxonomy_table = as.data.frame(t_filtered_taxonomy_table[!duplicated(t_filtered_taxonomy_table, fromLast = T), ])
+  
   ##Transpose the matrix to get the filtered taxonomy table
   filtered_taxonomy_table <- as.data.frame(t(t_filtered_taxonomy_table))
-  
   
   write.table(filtered_taxonomy_table, file="~/filtered_taxonomy.txt", sep = "\t", quote = F)
   

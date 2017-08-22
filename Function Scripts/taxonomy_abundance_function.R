@@ -72,11 +72,13 @@ taxonomy_abundance <- function(taxonomy_table,abundance_value,individuals_value)
       t_filtered_taxonomy_table <- t_filtered_taxonomy_table[,-1]
           ##Remove Mean column
                 t_filtered_taxonomy_table <- t_filtered_taxonomy_table[,-1]
-    
+     
+      #Remove duplicated rows and keep the last one
+    t_filtered_taxonomy_table = as.data.frame(t_filtered_taxonomy_table[!duplicated(t_filtered_taxonomy_table, fromLast = T), ])
+           
     ##Transpose the matrix to get the filtered taxonomy table
         filtered_taxonomy_table <- as.data.frame(t(t_filtered_taxonomy_table))
-    
-    
+
       write.table(filtered_taxonomy_table, file="~/filtered_taxonomy.txt", sep = "\t", quote = F)
 
   ##Insterection plot    

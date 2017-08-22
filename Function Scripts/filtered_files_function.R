@@ -1,5 +1,5 @@
  
-  ## Create filtered files by sample factor QC ##
+  ## Create filtered files by SAMPLE quality ##
 
   # input_file: file to filtrate 
         # tax_input: taxa 
