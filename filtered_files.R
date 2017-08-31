@@ -14,11 +14,11 @@ reads_over_10M <- as.data.frame(reads_table[with(reads_table, reads_table$Reads>
       reads_below_10M <- as.data.frame(reads_table[with(reads_table, reads_table$Reads<10000000),])
           #reads_below_10M <- write.table(reads_below_10M, file = "~/reads_below_10M.txt", quote = F, sep = "\t")
 
-tax_table <- read.table("~/Documents/Universitat/Holanda/Projecte/Metadata/Taxa data/IBD_taxonomy_DUDes.txt", sep = "\t", header = T, row.names = 1)
+tax_table <- read.table("~/Documents/Universitat/Holanda/Projecte/Metadata/taxa_data/IBD_taxonomy_DUDes.txt", sep = "\t", header = T, row.names = 1)
     t_tax_table <- as.data.frame(t(tax_table))
     
   #Filtered DUDes file
-filtered_DUDes <- merge(t_tax_table, reads_over10M_table, by="row.names")
+filtered_DUDes <- merge(t_tax_table, reads_over_10M, by="row.names")
   rownames(filtered_DUDes) <- filtered_DUDes[,1]
   filtered_DUDes <- filtered_DUDes[,-1]
   filtered_DUDes$Reads <- NULL

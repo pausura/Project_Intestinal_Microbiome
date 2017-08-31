@@ -9,7 +9,7 @@ tax_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax_D
   
 ## Merge metadata with intestinal categories file     
 
-intestinal_categories <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_groups.txt", sep="\t", header = T, row.names = 1)
+intestinal_categories <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_content_group.txt", sep="\t", header = T, row.names = 1)
 
 total_data <- merge(intestinal_categories, tax_table, by="row.names")  
     rownames(total_data) <- total_data[,1]

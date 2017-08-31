@@ -4,15 +4,15 @@
 getwd()
 setwd("/Users/paulasuredahorrach/Documents/Universitat/Holanda/Projecte")
 
-intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_groups.txt", sep = "\t", header = T, row.names = 1)
+intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_content_group.txt", sep = "\t", header = T, row.names = 1)
 
 
 # Filum level
     # Open filum_table
-filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/Filtered_DUDes/filum_table_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
+filum_table <- read.table("~/DUDes_results/filum_table_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
 t_filum_table <- as.data.frame(t(filum_table))
 
-filum_groups <- merge(t_filum_table, intestinal_groups, by = "row.names")
+filum_groups <- merge(filum_table, intestinal_groups, by = "row.names")
       rownames(filum_groups) <- filum_groups[,1]
       filum_groups <- filum_groups[,-1]
 
@@ -80,7 +80,9 @@ library(psych)
           rownames(filum_group_table) <- filum_group_table[,1]
           filum_group_table <- filum_group_table[,-1]
    
-  #### Stacked barplot ####
+  write.table(filum_group_table, file = "~/filum_abundance_group.txt", sep = "\t", quote = F)  
+          
+#### Stacked barplot ####
 
   library(reshape2) 
   library(ggplot2)

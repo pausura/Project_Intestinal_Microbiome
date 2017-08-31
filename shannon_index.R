@@ -42,11 +42,11 @@ t_species_table <- as.data.frame(t(species_table))
 library(vegan)
 library(ggplot2)
 
-alpha <- as.data.frame(diversity(t_species_table,index="shannon"))
+alpha <- as.data.frame(diversity(species_table,index="shannon"))
 
   alpha_shannon <- write.table(alpha, file = "~/alpha_diversity_DUDes.txt", quote = F, sep="\t")
 
-intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_groups.txt", sep = "\t", header = T, row.names = 1)
+intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_content_group.txt", sep = "\t", header = T, row.names = 1)
 
 group_taxa <- merge(intestinal_groups, alpha, by="row.names")
 rownames(group_taxa) <- group_taxa[,1]
