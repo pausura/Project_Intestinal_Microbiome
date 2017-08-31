@@ -1,46 +1,43 @@
 ### Calculate Shannon Index ###
 
-# Open species table
-  species_table <- read.table("~/Documents/Universitat/Holanda/Projecte/Filtered_DUDes/species_table_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
-# Open group table
-  intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_groups.txt", sep = "\t", header = T, row.names = 1)
+# For a given taxonomy file at specific level (for example: species) this function calculates alpha diversity for each sample
+# and creates a violin plot to represent differences between sample categories. Need a taxonomy file with taxonomies in columns
+# and samples in rows and a sample category file. 
 
-shannon_function(species_table, intestinal_groups)
-
-shannon_function <- function(level_table, group_table) {
+shannon_index_function <- function(taxonomy_level_table, category_table) {
   
   ##Required packages - shannon diversity/ggplot
   library(vegan)
   library(ggplot2)
+  library(RColorBrewer)
   
-  ## Calculate shannon (alpha) for each sample
-   alpha <- as.data.frame(diversity(level_table, index="shannon"))
+  ## Calculate shannon index (alpha) for each sample in the taxonomy file: diversity function from vegan package
+     alpha <- as.data.frame(diversity(taxonomy_level_table, index="shannon"))
       colnames(alpha)[1] <- "alpha_diversity"
-  ## Divide alpha results by intestinal groups
-      #Merge alpha with intestinal groups table
-          group_taxa <- merge(group_table, alpha, by="row.names")
-              rownames(group_taxa) <- group_taxa[,1]
-              group_taxa <- group_taxa[,-1]
-          #colnames(group_taxa)[2] <- "diversity"
+  ## Divide alpha results by categories
+      # Merge alpha with category table
+          my_table <- merge(category_table, alpha, by="row.names")
+              rownames(my_table) <- my_table[,1]
+              my_table <- my_table[,-1]
       # Calculate the number of categories
-        category_number <- nlevels(group_taxa[,1])
+        category_number <- nlevels(my_table[,1]) #First column because in merge the category table is the first one
       # Create a new column to assign a number to each category
-        group_taxa$category <- as.integer(group_taxa[,1])    
+        my_table$category <- as.integer(my_table[,1])    
       # Create a new column to colour the plot depending on the category (level)        
-        group_taxa$color = "none" 
+        my_table$color = "none" 
       # Create a palette of colors depending on the number of categories
         my_palette <- matrix(brewer.pal(category_number,"Set1"))
-      # For loop to assign one different color to each different category in a new column
+      # For loop to assign one different color to each different category in the new color column
         for (i in 1:category_number){
-            group_taxa[group_taxa$category == i,]$color = my_palette[i,1]
+            my_table[my_table$category == i,]$color = my_palette[i,1]
           }
   
   ### Create a violin plot
-shannon_plot <- ggplot(group_taxa, aes(x=category, y=alpha_diversity, fill = group_taxa$color)) + labs (y="Shannon Diversity Index", x="Category") + geom_violin(trim=FALSE) + geom_boxplot(width = 0.1) + theme_classic() + theme(legend.position="none") + theme(axis.text.x = element_text(hjust = 1, size=16,color="black")) + scale_color_identity("All_categories", breaks = group_taxa$color, labels= group_taxa$category, guide = "legend")
+shannon_index_plot <- ggplot(my_table, aes(x=category, y=alpha_diversity, fill = my_table$color)) + labs (y="Shannon Diversity Index", x="Category") + geom_violin(trim=FALSE) + geom_boxplot(width = 0.1) + theme_classic() + theme(legend.position="none") + theme(axis.text.x = element_text(hjust = 1, size=16,color="black")) + scale_color_identity("All_categories", breaks = my_table$color, labels= my_table$category, guide = "legend")
 
   ##Save the plot as pdf.file
   pdf("shannon_plot.pdf")
-  print(shannon_plot)
+  print(shannon_index_plot)
 
 dev.off()
 
