@@ -3,24 +3,22 @@
   #Open the taxonomy table
 tax_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
     
-taxonomy_abundance(tax_table,0.01,15)
+filtering_taxonomy(tax_table,0.01,15)
 
   #taxonomy_table
   #abundance_value: value for filtering by relative abundance mean
   #individuals_value: value for filtering by number of minimum individuals
 
-taxonomy_abundance <- function(taxonomy_table,abundance_value,individuals_value) {
+filtering_taxonomy <- function(taxonomy_table,abundance_value,individuals_value) {
   
         ##Function to calculate mean excluding 0 values
               nzmean <- function(a){
                 mean(a[a!=0])
               }
-  
         ##Function to calculate nº of 0
               zsum <- function(a){
                 sum (a==0)
               }
-  
         ##Function to calculate nº of non-0
              nsum <- function(a){
                 sum (a!=0)
@@ -45,7 +43,6 @@ taxonomy_abundance <- function(taxonomy_table,abundance_value,individuals_value)
     my_results[i,3] = cc
     my_results[i,4] = dd
   }
-       
   
   # The column names from the original table = row names from the new table
       rownames(my_results) = colnames(taxonomy_table)

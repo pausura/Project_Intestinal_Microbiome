@@ -97,7 +97,7 @@ calculate_table1 <- function (metadata_input, category_table) {
       # The column names from the original table = row names from the new table 
         rownames(my_results) = colnames(new_matrix)
       # Give names to the columns of the new table 
-        colnames(my_results) = c("Type", "Categories/Median", "Counts/Mean", "SD/%", "Number_non-zeros(n)", "Number_NA") 
+        colnames(my_results) = c("Type", "Categories/Median", "Counts/Mean", "%/SD", "Number_non-zeros(n)", "Number_NA") 
       
       # Save the name of the variable to title the data.frame (table)
         name_category <- new_matrix[1,1] 
@@ -150,7 +150,7 @@ calculate_table1 <- function (metadata_input, category_table) {
     # The column names from the original table = row names from the new table 
       rownames(my_results) = colnames(function_metadata)
     # Give names to the columns of the new table 
-      colnames(my_results) = c("Type", "Categories/Median", "Counts/Mean", "SD/%", "Number_non-zeros(n)", "Number_NA") 
+      colnames(my_results) = c("Type", "Categories/Median", "Counts/Mean", "%/SD", "Number_non-zeros(n)", "Number_NA") 
     
     # Export the new table
       write.table (my_results, file = "~/total_metadata_table1.txt" , quote = F, sep = "\t")  

@@ -91,7 +91,7 @@ library(psych)
           row.names(filum_group_table)=NULL
     my_table=melt(filum_group_table)
 
-filum_plot <- ggplot (my_table, aes(x=variable, y=value)) + geom_bar (aes(fill = bacteria), stat = "identity") + theme_classic() + xlab("Group") + ylab("relative_abundance")
+filum_plot <- ggplot (my_table, aes(x=variable, y=value)) + geom_bar (aes(fill = bacteria), stat = "identity") + theme_classic() + xlab("Group") + ylab("relative_abundance") + theme(legend.text=element_text(size=20)) + theme(axis.text=element_text(size=15), axis.title=element_text(size=15,face="bold"))
 filum_plot
 
 

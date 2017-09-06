@@ -61,7 +61,7 @@ group_taxa2[group_taxa2$Group=="small intestine",]$Group2="3_small_intestine"
 
 ##### Violin plot
 
-violin_plot <- ggplot(group_taxa2, aes(x=group_taxa2$Group2, y=group_taxa2$diversity, fill=group_taxa2$Group2)) + labs (y="Shannon Diversity Index", x="Group") + geom_violin(trim=FALSE) + geom_boxplot(width = 0.1) + scale_fill_manual(values=c("black","#2F2BFF","red")) + theme_classic() + theme(legend.position="none") + theme(axis.text.x = element_text(hjust = 1, size=16,color="black"))    
+violin_plot <- ggplot(group_taxa2, aes(x=group_taxa2$Group2, y=group_taxa2$diversity, fill=group_taxa2$Group2)) + labs (y="Shannon Diversity Index", x="Group") + geom_violin(trim=FALSE) + geom_boxplot(width = 0.1) + scale_fill_manual(values=c("#979494","#55AFEB","red")) + theme_classic() + theme(legend.position="none") + theme(axis.text = element_text(size = 10), axis.title = element_text(size = 15))    
 violin_plot
 
 ##Alternative function   

@@ -14,6 +14,9 @@ shannon_index_function <- function(taxonomy_level_table, category_table) {
   ## Calculate shannon index (alpha) for each sample in the taxonomy file: diversity function from vegan package
      alpha <- as.data.frame(diversity(taxonomy_level_table, index="shannon"))
       colnames(alpha)[1] <- "alpha_diversity"
+      
+  write.table(alpha, file = "~/alpha_diversity_per_sample.txt", sep = "\t", quote = F)    
+      
   ## Divide alpha results by categories
       # Merge alpha with category table
           my_table <- merge(category_table, alpha, by="row.names")

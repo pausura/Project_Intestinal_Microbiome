@@ -36,6 +36,9 @@ unique_group_intermediate_small <- merge(unique_group_intermediate_small, Groups
 
 write.table(unique_group_intermediate_small, file = "~/effect_group_intermediate_small.txt", sep= "\t", quote = F)
 
+nsum <- function(x){
+  sum (x!=0)
+}
 
 #Plot
 
@@ -46,7 +49,7 @@ group_plot_table <- merge(plot_table, group, by = "row.names")
 rownames(group_plot_table) <- group_plot_table[,1]
 group_plot_table <- group_plot_table[,-1]
 
-plot_matrix = matrix(ncol = 4, nrow = 15)
+plot_matrix = matrix(ncol = 4, nrow = 17)
 
 normal_plot_table <- subset(group_plot_table, group_plot_table$Group=="normal")
 normal_plot_table$Group <- NULL
@@ -84,7 +87,7 @@ library(reshape2)
 plot_matrix=as.data.frame(plot_matrix)
 test_plot1 = melt(plot_matrix, id=1)
 
-ggplot(test_plot1, aes(x=Taxonomy, y=as.numeric(value), group=variable, fill=variable)) + geom_bar(stat="identity",position="dodge") + theme_bw() + theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 8))
+ggplot(test_plot1, aes(x=Taxonomy, y=as.numeric(value), group=variable, fill=variable)) + geom_bar(stat="identity",position="dodge") + theme_bw() + theme(axis.text.x = element_text(angle = 60, hjust = 1, size = 8))
 
 
 

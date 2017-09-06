@@ -5,9 +5,9 @@ getwd()
 setwd("/Users/paulasuredahorrach/Documents/Universitat/Holanda/Projecte")
 
 # Open diversity_table
-shannon_table <- read.table("~/Documents/Universitat/Holanda/Projecte/Filtered_DUDes/alpha_diversity_DUDes.txt", sep = "\t", header = T, row.names = 1)
+shannon_table <- read.table("~/Documents/Universitat/Holanda/Projecte/DUDes_results/alpha_diversity_DUDes.txt", sep = "\t", header = T, row.names = 1)
 # Open intestinal_groups table
-intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_groups.txt", sep = "\t", header = T, row.names = 1)
+intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_content_group.txt", sep = "\t", header = T, row.names = 1)
 
 ## Merge both tables
 shannon_groups_table <- merge(shannon_table, intestinal_groups, by = "row.names")
