@@ -19,7 +19,6 @@
 #Sample2  cat1
 #Sample3  cat2
 
-
 shannon_index <- function(taxonomy_level_table, category_table) {
   
   ##Required packages - shannon diversity/ggplot
