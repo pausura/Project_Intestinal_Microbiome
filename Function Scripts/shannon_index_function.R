@@ -4,6 +4,22 @@
 # and creates a violin plot to represent differences between sample categories. Need a taxonomy file with taxonomies in columns
 # and samples in rows and a sample category file. 
 
+
+# Example taxonomy_level_table
+#
+#SID        SP1   SP2    SP3
+#Sample1    23.5  3.5    5.5
+#Sample2    10.9 43.3   34.6
+#Sample3    50    10    30
+
+# Example category_table
+#
+#SID    category
+#Sample1  cat1
+#Sample2  cat1
+#Sample3  cat2
+
+
 shannon_index_function <- function(taxonomy_level_table, category_table) {
   
   ##Required packages - shannon diversity/ggplot
