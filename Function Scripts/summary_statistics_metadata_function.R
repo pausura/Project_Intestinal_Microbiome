@@ -15,7 +15,7 @@
 #SID        factor1   factor2    factor3
 #Sample1     23.5  	   0.9   	   yes
 #Sample2     10.9 	   0.01  	   no
-#Sample3     50    	   0.3    	   no
+#Sample3     50    	   0.3    	 no
 
 #Example category_table
 #
@@ -23,6 +23,13 @@
 #Sample1	 cat1
 #Sample2	 cat1
 #Sample3	 cat2
+
+#Example output
+#
+#factors      Type      Categories/Median   Counts/Mean     %/SD    Number_non-zeros(n)  Number_NA
+#factor1    numerical         4.5               4.32        1.22            34              6
+#factor2    categorical     UC,CD,IBDU         4,20,5    13.8,69,17.2       29             11
+#factor3    numerical         10                 9.34       0.38            38              2
 
 
 summary_statistics_metadata <- function (metadata_input, category_table) {

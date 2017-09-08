@@ -1,4 +1,4 @@
-### Logistic regresion - Adonis data ###
+### Logistic regresion - metadata ###
 
 metadata <- read.table("~/Documents/Universitat/Holanda/Projecte/Metadata/logistic_regression_metadata_adonis.txt", sep = "\t", header = T, row.names = 1, check.names = F)
 metadata_table <- metadata

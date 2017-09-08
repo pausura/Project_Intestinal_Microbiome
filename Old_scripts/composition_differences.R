@@ -4,12 +4,12 @@
 getwd()
 setwd("/Users/paulasuredahorrach/Documents/Universitat/Holanda/Projecte")
 
-intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/intestinal_content_group.txt", sep = "\t", header = T, row.names = 1)
+intestinal_groups <- read.table("~/Documents/Universitat/Holanda/Projecte/anatomic_content_group.txt", sep = "\t", header = T, row.names = 1)
 
 
 # Filum level
     # Open filum_table
-filum_table <- read.table("~/DUDes_results/filum_table_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
+filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/DUDes_results/filum_table_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
 t_filum_table <- as.data.frame(t(filum_table))
 
 filum_groups <- merge(filum_table, intestinal_groups, by = "row.names")
@@ -28,6 +28,7 @@ library(psych)
             top4_table_intermediate <- resum_intermediate[order(resum_intermediate$mean, decreasing = T)[1:4],]
           #Sum values and create an other category: others
             sum_top4_intermediate <- sum(top4_table_intermediate$mean)
+  
             others_intermediate <- (100-sum_top4_intermediate)
     
       ## Create a new table and add a row for "others" category
@@ -37,7 +38,7 @@ library(psych)
       rownames(intermediate_results)[5] <- "others"    
       
 ##Normal
-  normal_filum <- subset(filum_groups, filum_groups$Group=="normal")
+  normal_filum <- subset(filum_groups, filum_groups$Group=="colonic")
   normal_filum <- normal_filum[,-13]
        ## Calculate mean
             resum_normal <- describe(normal_filum)
@@ -54,7 +55,7 @@ library(psych)
       rownames(normal_results)[5] <- "others" 
 
 ##Small Intestine
-  small_filum <- subset(filum_groups, filum_groups$Group=="small intestine")
+  small_filum <- subset(filum_groups, filum_groups$Group=="ileal")
   small_filum <- small_filum[,-13]
         ## Calculate mean
             resum_small <- describe(small_filum)

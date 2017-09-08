@@ -1,0 +1,357 @@
+Type	Categories/Median	Counts/Mean	%/SD	Number_non-zeros(n)	Number_NA
+Group	categorical	intermediate, normal, small intestine	0, 0, 58	0, 0, 100	58	0
+Sex	categorical	female, male	41, 17	70.69, 29.31	58	0
+TotalReads	numerical	21269465	23716391.2068966	9221553.61793607	58	0
+TimeToFecalProductionStoragemin80InDays	numerical	3	12.8333333333333	18.76141162167	54	4
+AgeAtFecalSampling	numerical	44	45.1896551724138	11.4821858921315	58	0
+ActiveDisease	categorical	Active, NotActive	15, 43	25.86, 74.14	58	0
+CRPdivided5	numerical	1	1.79310344827586	2.13376054403631	58	0
+ANCAcontinuous	numerical	0	43.5087719298246	106.979491159858	57	1
+ANCAposneg	categorical	neg, pos	39, 18	68.42, 31.58	57	1
+ASCA	categorical	dubieus, neg, pos	1, 39, 17	1.75, 68.42, 29.82	57	1
+ASCAposneg	categorical	neg, pos	39, 17	69.64, 30.36	56	2
+DiagnosisFirst	categorical	CD, CU, IBDU, UC	21, 33, 0, 0	38.89, 61.11, 0, 0	54	4
+DiseaseDurationYears	numerical	14	16.6206896551724	11.0847256788646	58	0
+Length	numerical	171.5	172.810344827586	8.56442437010734	58	0
+Weight	numerical	72.3	76.9298245614035	19.8315042015789	57	1
+BMI	numerical	24.5	25.8421052631579	6.96714092232811	57	1
+DiagnosisCurrent	categorical	CD, IBDU, MicroscopicColitis, UC	23, 1, 0, 34	39.66, 1.72, 0, 58.62	58	0
+MontrealA	categorical	A1under16years, A2between17and40years, A3over40years	8, 40, 8	14.29, 71.43, 14.29	56	2
+MontrealLminL4	categorical	L1terminalileum, L2colon, L3ileocolon	2, 36, 15	3.77, 67.92, 28.3	53	5
+DiseaseLocation	categorical	both, colon, ileum, none	15, 36, 2, 5	25.86, 62.07, 3.45, 8.62	58	0
+MontrealL4	categorical	no, yes	48, 5	90.57, 9.43	53	5
+MontrealBPerianal	categorical	no, yes	41, 16	71.93, 28.07	57	1
+Ethnicity	categorical	Caucasian, Noncaucasian	55, 2	96.49, 3.51	57	1
+MedicationMesalazines	categorical	no, yes	50, 3	94.34, 5.66	53	5
+MedicationMesalazinesLocal	categorical	no, yes	53, 0	100, 0	53	5
+MedicationSteroids	categorical	no, yes	49, 4	92.45, 7.55	53	5
+MedicationSteroidsLocal	categorical	no, yes	52, 1	98.11, 1.89	53	5
+MedicationMesalazinesAndSteroidsLocal	categorical	no, yes	53, 0	100, 0	53	5
+MedicationImmunosuppressants	categorical	no, yes	38, 15	71.7, 28.3	53	5
+MedicationAntiTNF	categorical	no, yes	43, 10	81.13, 18.87	53	5
+MedicationBiologicals	categorical	no, yes	53, 0	100, 0	53	5
+MedicationAntibiotics	categorical	no, yes	52, 1	98.11, 1.89	53	5
+MedicationAntidiarrhoea	categorical	no, yes	51, 2	96.23, 3.77	53	5
+MedicationVitamins	categorical	no, yes	37, 16	69.81, 30.19	53	5
+MedicationMinerals	categorical	no, yes	51, 2	96.23, 3.77	53	5
+MedicationVitaminsAndMinerals	categorical	no, yes	43, 10	81.13, 18.87	53	5
+MedicationIron	categorical	no, yes	50, 3	94.34, 5.66	53	5
+MedicationPPI	categorical	no, yes	33, 20	62.26, 37.74	53	5
+MedicationAgainstOsteoporosis	categorical	no, yes	50, 3	94.34, 5.66	53	5
+MedicationBileAcids	categorical	no, yes	49, 4	92.45, 7.55	53	5
+Appendectomy	categorical	no, yes	41, 17	70.69, 29.31	58	0
+AppendectomyDueAppendicitis	categorical	no, yes	57, 1	98.28, 1.72	58	0
+Dysplasia	categorical	no, yes	58, 0	100, 0	58	0
+BowelCancer	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMOrAnyComplications	categorical	no, yes	35, 23	60.34, 39.66	58	0
+EIMAnyEyeComplications	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMEyeUveitis	categorical	no, yes	58, 0	100, 0	58	0
+EIMEyeEpiscleritis	categorical	no, yes	58, 0	100, 0	58	0
+EIMAnyMouthComplications	categorical	no, yes	58, 0	100, 0	58	0
+EIMMouthAphte	categorical	no, yes	58, 0	100, 0	58	0
+EIMMouthCrohnInAphteBiopsy	categorical	no, yes	58, 0	100, 0	58	0
+EIMAnySkinComplications	categorical	no, yes	50, 8	86.21, 13.79	58	0
+EIMSkinErythemaNodosum	categorical	no, yes	58, 0	100, 0	58	0
+EIMSkinPyodermaGangrenosum	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMSkinHydradenitis	categorical	no, yes	56, 2	96.55, 3.45	58	0
+EIMSkinHydradenitisAndAbces	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMSkinPsoriasis	categorical	no, yes	58, 0	100, 0	58	0
+EIMSkinCancer	categorical	no, yes	58, 0	100, 0	58	0
+EIMAnyJointComplications	categorical	no, yes	52, 6	89.66, 10.34	58	0
+EIMJointArthralgia	categorical	no, yes	40, 18	68.97, 31.03	58	0
+EIMJointEnthesitis	categorical	no, yes	55, 3	94.83, 5.17	58	0
+EIMJointArthritis	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMJointArthritisTypeI	categorical	no, yes	58, 0	100, 0	58	0
+EIMJointArthritisTypeII	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMJointDactylitis	categorical	no, yes	57, 1	98.28, 1.72	58	0
+EIMJointAnkylosingSpondylitis	categorical	no, yes	58, 0	100, 0	58	0
+EIMJointInflammatoryBackPain	categorical	no, yes	58, 0	100, 0	58	0
+EIMJointSacroiliits	categorical	no, yes	58, 0	100, 0	58	0
+ComplicationDeepVenousThrombosis	categorical	no, yes	57, 1	98.28, 1.72	58	0
+OsteoporosisDiagnosis	categorical	no, Osteopenia, Osteoporosis	53, 3, 2	91.38, 5.17, 3.45	58	0
+KidneyStones	categorical	no, yes	57, 1	98.28, 1.72	58	0
+PrimarySclerosingCholangitis	categorical	no, yes	55, 3	94.83, 5.17	58	0
+SmokeInhaleSmokeFromAdultsasChild	categorical	no, yes	19, 35	35.19, 64.81	54	4
+SmokeExposedToSmokeForMoreThanOneHour	categorical	Daily, MoreThanOncePerWeek, OncePerWeek, RarelyOrNever	12, 4, 3, 38	21.05, 7.02, 5.26, 66.67	57	1
+SmokeAreYouAFormerSmoker	categorical	no, yes	30, 24	55.56, 44.44	54	4
+SmokeDidYouSmokeCigarettes	categorical	no, yes	42, 16	72.41, 27.59	58	0
+SmokeHowManyCigarettesDidYouSmoke	numerical	0	1.79310344827586	4.23336215222815	58	0
+SmokeDidYouSmokeShag	categorical	no, yes	46, 12	79.31, 20.69	58	0
+SmokeHowManyShagDidYouSmoke	numerical	0	3.1551724137931	7.20818668133046	58	0
+SmokeDidYouSmokeCigars	categorical	no, yes	57, 1	98.28, 1.72	58	0
+SmokeHowManyCigarsDidYouSmoke	numerical	0	0.0862068965517241	0.656532164298613	58	0
+SmokeDidYouSmokePipe	categorical	no, yes	58, 0	100, 0	58	0
+SmokeHowManyPipeDidYouSmoke	numerical	0	0	0	58	0
+SmokeDidYouInhaleInYourLungs	categorical	no, yes	37, 21	63.79, 36.21	58	0
+ResectionAny	categorical	no, yes	1, 57	1.72, 98.28	58	0
+NumberOfResectionsAny	numerical	2	2.39655172413793	2.26289408836835	58	0
+ResectionIlealCecalAny	categorical	no, yes	50, 7	87.72, 12.28	57	1
+NumberOfResetionsIleoCecal	numerical	0	0.12280701754386	0.331133089266261	57	1
+IleocecalValveInSitu	categorical	no, yes	53, 3	94.64, 5.36	56	2
+ResectionIlealAny	categorical	no, yes	47, 8	85.45, 14.55	55	3
+NumberOfResectionsIleal	numerical	0	0.181818181818182	0.474962341232677	55	3
+ResectionColonicAny	categorical	no, yes	6, 52	10.34, 89.66	58	0
+NumberOfResectionColonic	numerical	1	1.22413793103448	0.750277222409037	58	0
+Fistulotomy	categorical	no, yes	51, 7	87.93, 12.07	58	0
+NumberofFistulotomy	numerical	0	0.275862068965517	0.874454284929025	58	0
+IndicationabcessOrfistula	categorical	no, yes	39, 19	67.24, 32.76	58	0
+NumberIndicationabcessOrfistula	categorical	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, NA 	39, 10, 1, 4, 1, 0, 1, 0, 2, 0, 0	67.24, 17.24, 1.72, 6.9, 1.72, 0, 1.72, 0, 3.45, 0, 0	58	0
+DrainageAbcesSeton	categorical	no, yes	45, 13	77.59, 22.41	58	0
+NumberOfDrainageAbcesSeton	numerical	0	0.5	1.2175615550562	58	0
+NutritionOraloralParoral	categorical	enteral, oral	1, 57	1.72, 98.28	58	0
+Diet	categorical	always, no, sometimes	7, 47, 1	12.73, 85.45, 1.82	55	3
+Low_energy_diet	categorical	no, yes	54, 1	98.18, 1.82	55	3
+low_fat_diet	categorical	no, yes	53, 2	96.36, 3.64	55	3
+low_sodium_diet	categorical	no, yes	54, 1	98.18, 1.82	55	3
+dm_diet	categorical	no, yes	55, 0	100, 0	55	3
+high_cholestrol_diet	categorical	no, yes	55, 0	100, 0	55	3
+high_fibre_diet	categorical	no, yes	55, 0	100, 0	55	3
+other_diet	categorical	no, yes	49, 6	89.09, 10.91	55	3
+way_of_living	categorical	0, always, no, sometimes	1, 0, 53, 1	1.82, 0, 96.36, 1.82	55	3
+preparation_self	categorical	always, never, often, sometimes	20, 3, 19, 9	39.22, 5.88, 37.25, 17.65	51	7
+vegatarian	categorical	no, yes	53, 2	96.36, 3.64	55	3
+vegan	categorical	no, yes	55, 0	100, 0	55	3
+macrobiotic	categorical	no, yes	55, 0	100, 0	55	3
+antroposophic	categorical	no, yes	55, 0	100, 0	55	3
+other_way_of_living	categorical	no, yes	54, 1	98.18, 1.82	55	3
+often_breakfast	numerical	7	6.7962962962963	0.527708811559315	54	4
+often_bread	numerical	7	6.88888888888889	0.371974165600534	54	4
+often_hot_meal	numerical	7	6.88888888888889	0.371974165600534	54	4
+how_often_alcohol	numerical	3	3.12962962962963	1.86371809650936	54	4
+how_often_chocomilk_sweetened_milk_drinks	numerical	1	2.38888888888889	1.91731599610779	54	4
+how_often_coffee	numerical	7	5.33333333333333	2.43403539454273	54	4
+how_often_fruits	numerical	6	5.24074074074074	1.7797093804007	54	4
+how_often_milk_or_buttermilk	numerical	5	4.48148148148148	2.46286181704116	54	4
+how_often_muesli.	numerical	1	2.24074074074074	1.9993884459833	54	4
+how_often_nuts	numerical	2	2.53703703703704	1.53835200921725	54	4
+how_often_pasta	numerical	4	3.59259259259259	1.20562390516231	54	4
+how_often_pulses	numerical	2	2	1.14924093078046	54	4
+how_often_rice	numerical	3	3.03703703703704	1.31698573741884	54	4
+how_often_soda	numerical	5	4.85185185185185	1.98491868002628	54	4
+how_often_tea	numerical	7	6.11111111111111	1.76620974273893	54	4
+how_often_vegetables	numerical	6	5.92592592592593	1.32965950886076	54	4
+how_often_yoghurt_milk_based_puddings	numerical	5	4.68518518518519	2.05420942947737	54	4
+crackers	numerical	1.86	5.998	9.18811055416485	55	3
+rolls	numerical	8.63	23.3883636363636	40.0039620613516	55	3
+bread	numerical	94.21	96.8376363636364	52.3059296958462	55	3
+cheese_20	numerical	0	5.36727272727273	10.228670934726	55	3
+cheese_40	numerical	0	8.89963636363636	18.298671573281	55	3
+cheese_48	numerical	0	7.12472727272727	19.1325802072592	55	3
+cheese_other	numerical	0	1.33036363636364	4.4401130130914	55	3
+meats_fat	numerical	0	5.26818181818182	13.856177134446	55	3
+meats_other	numerical	5.06	10.4858181818182	13.1142650195643	55	3
+peanutbutter	numerical	0.54	3.48890909090909	6.09600739790284	55	3
+sandwichspread	numerical	0	2.13127272727273	5.50409008006115	55	3
+chocolatespreads	numerical	1.34	6.71618181818182	9.99180932914723	55	3
+spreads_sweet	numerical	1.35	5.67290909090909	8.86928233614474	55	3
+egg_cooked	numerical	7.15	10.3923636363636	11.5715961259611	55	3
+egg_baked	numerical	0	4.39345454545455	6.73181231945582	55	3
+breakfast_drink	numerical	0	4.42563636363636	16.5699141422077	55	3
+cereals	numerical	0	5.12472727272727	13.216607097322	55	3
+milk_whole	numerical	0	19.6338181818182	64.8272417729789	55	3
+milk_semiskimmed	numerical	10.73	62.6370909090909	99.0382683177592	55	3
+milk_skimmed	numerical	0	4.05272727272727	28.2797113803797	55	3
+buttermilk	numerical	0	24.4209090909091	51.9333376933648	55	3
+chocolatemilk	numerical	0	3.87872727272727	9.94615728040054	55	3
+yoghurt_drink_added_sugar	numerical	0	14.2636363636364	49.2077414251215	55	3
+yoghurt_drink_other	numerical	0	10.6445454545455	43.1821618614713	55	3
+custard_ff	numerical	0	9.69072727272727	21.4393042360975	55	3
+yoghurt_ff	numerical	0	6.50254545454545	23.7958276157647	55	3
+yoghurt_lf	numerical	0	10.4	30.7330394056805	55	3
+yoghurt_lf_fruits	numerical	0	0.426	2.14690354110631	55	3
+fromage_frais_fruits	numerical	0	8.68836363636364	22.3606322182235	55	3
+porridge	numerical	0	1.84909090909091	6.51574709986202	55	3
+other_custard_yoghurt_fromagefrais	numerical	13.39	28.7383636363636	39.8357077750527	55	3
+icecream_dairy	numerical	3.38	7.12781818181818	13.1767158122181	55	3
+whipped_cream	numerical	0.72	0.961090909090909	1.69083988852272	55	3
+sugar_yoghurt	numerical	0	1.94963636363636	7.40443960008087	55	3
+coffee	numerical	232.25	242.637818181818	223.810679160452	55	3
+sugar_coffee	numerical	0	2.53072727272727	7.04712677320167	55	3
+coffeecreamer_hf	numerical	0	7.76181818181818	14.8776553921083	55	3
+coffeecreamer_p	numerical	0	0.551272727272727	1.97633410594375	55	3
+coffeecreamer_ff	numerical	0	0.225090909090909	1.19350692829107	55	3
+milk_coffee	numerical	0	10.1807272727273	48.0993729401856	55	3
+other_milk_coffee	numerical	0	0.540545454545455	4.00879238220644	55	3
+tea	numerical	348.38	325.674727272727	248.350881936667	55	3
+sugar_tea	numerical	0	5.76381818181818	10.0545347224448	55	3
+soup_legumes	numerical	0	6.96890909090909	16.1225244637487	55	3
+soup	numerical	22.25	40.6685454545455	48.6794489461104	55	3
+ready_meals_chinese_indian	numerical	0	5.48418181818182	7.83292899450752	55	3
+meals_fast_food	numerical	0	6.92527272727273	19.4592746481376	55	3
+ready_meals_other	numerical	0	9.58109090909091	23.680307858416	55	3
+pizza	numerical	12.94	13.498	15.8839008176576	55	3
+pasta	numerical	15.85	23.0230909090909	26.0888966642564	55	3
+rice	numerical	9.91	20.6076363636364	24.7302304854872	55	3
+legumes	numerical	2.22	9.11672727272727	19.5102453668859	55	3
+potato_cooked_mashed	numerical	49.82	69.5350909090909	53.444922181027	55	3
+potato_baked_fries	numerical	14.32	20.9787272727273	26.011418365541	55	3
+vegetables_cooked_nobutter	numerical	106.46	106.627636363636	67.5342923855242	55	3
+herring_salted	numerical	0	1.52945454545455	3.45609628755067	55	3
+fish_white_fried	numerical	0	2.89963636363636	4.38112194477048	55	3
+fish_lean	numerical	0	4.15381818181818	8.13552964218818	55	3
+fish_fatty	numerical	0	2.74654545454545	3.75320071710742	55	3
+fish_other	numerical	0	1.25963636363636	2.37437786287066	55	3
+meat	numerical	11.31	11.2983636363636	7.18099440231369	55	3
+sausage_smoked	numerical	0	3.95018181818182	5.54985935454394	55	3
+beef_lean	numerical	1.35	4.74054545454545	6.34706622755503	55	3
+beef_fat	numerical	2.72	5.32109090909091	6.85682700420949	55	3
+pork_lean	numerical	3.96	6.19345454545455	6.57053642834654	55	3
+pork_fat	numerical	0	3.66454545454545	5.2515055401009	55	3
+pork_processed	numerical	6.58	6.142	5.32301098307395	55	3
+chicken	numerical	9.56	9.94327272727273	7.44983446362089	55	3
+other_meat_poultry	numerical	6.02	5.08163636363636	4.16905387776294	55	3
+gravy	numerical	8.93	12.0732727272727	12.6264541596786	55	3
+sauce_hot	numerical	4.6	8.88872727272727	11.0392444814189	55	3
+mayonaise	numerical	0.35	1.79781818181818	2.93978059833212	55	3
+non_red_sauces	numerical	0.36	1.65072727272727	2.81583870444094	55	3
+saladdressing_f	numerical	0.36	1.37509090909091	2.31663938651186	55	3
+saladdressing_w	numerical	0	0.135090909090909	0.470790795432507	55	3
+nut_d	numerical	0	1.07490909090909	3.4020657519324	55	3
+cheese_d	numerical	0.94	1.79618181818182	2.24391893537895	55	3
+fruit	numerical	84.62	106.163272727273	93.4072968252589	55	3
+applesauce	numerical	0	4.41236363636364	9.55146197140761	55	3
+biscuits_s	numerical	11.51	12.4858181818182	13.5509433443538	55	3
+cake	numerical	6.14	10.0990909090909	10.0207132282435	55	3
+pastry	numerical	3.45	5.79236363636364	4.7264570411267	55	3
+spiced_cake	numerical	0	4.18327272727273	7.02599355160574	55	3
+candybars	numerical	0	2.17072727272727	5.52820339663916	55	3
+chocolate	numerical	1.86	3.95745454545455	5.10843935658755	55	3
+sweets	numerical	2.46	4.45436363636364	5.44460275176979	55	3
+snack_savoury_hot	numerical	5.39	6.92472727272727	6.25830377402265	55	3
+mayonaise_snack	numerical	0	1.86363636363636	7.38037923436849	55	3
+non_red_sauces_snack	numerical	0	0.648909090909091	1.97651645740614	55	3
+snack_nut	numerical	0.69	5.19254545454545	10.1202273100994	55	3
+crisps	numerical	3.92	7.92018181818182	10.1382985808506	55	3
+snack_cheese	numerical	2.93	3.77236363636364	3.95285174302767	55	3
+snack_meats	numerical	0.93	2.00527272727273	3.24287187224503	55	3
+salad_toast	numerical	0	1.67036363636364	2.28578778351049	55	3
+softdrink_sugar	numerical	27.98	171.655454545455	335.829554331196	55	3
+softdrink_no_sugar	numerical	8.8	81.5294545454545	174.827456022578	55	3
+fruitjuice	numerical	26.7	89.8172727272727	145.919817282498	55	3
+beer	numerical	0	24.87	78.7740794931937	55	3
+beer_af	numerical	0	0.776363636363636	4.87742204358468	55	3
+wine_red	numerical	0	9.17945454545455	18.79141553596	55	3
+wine_white	numerical	0	9.64709090909091	20.2077867896518	55	3
+wine_fort	numerical	0	0.14	1.03826778819339	55	3
+spirits	numerical	0	0.514363636363636	1.66728295676303	55	3
+other_alc_drinks	numerical	0	0.961454545454545	2.38890678405325	55	3
+butter_b	numerical	0	10.1709090909091	14.0290730235105	55	3
+margarine_lfb	numerical	5.66	12.9630909090909	18.1950144649701	55	3
+butter_ob	numerical	0	1.19563636363636	7.34528918414062	55	3
+vegetables_stirfried	numerical	0.86	1.02909090909091	1.18458505428768	55	3
+fish_prepared_fat	numerical	0	0.232545454545455	0.500496857509719	55	3
+vegetables_cooked_butter	numerical	0	0.879272727272727	1.38399964481029	55	3
+group_alcohol	numerical	14.3	45.3120748062364	94.8590265515163	55	3
+group_breads	numerical	108.0704206	126.224308614364	67.4473353672525	55	3
+group_cereals	numerical	0	5.12472727272727	13.216607097322	55	3
+group_cheese	numerical	25.03935221	28.2890115666727	24.4522050751965	55	3
+group_coffee	numerical	232.25	242.637818181818	223.810679160452	55	3
+group_dairy	numerical	198.0567963	237.597325913891	194.74993971847	55	3
+group_eggs	numerical	8.9	14.7845454545455	15.6665303561661	55	3
+group_fish	numerical	10.42688073	12.8204415703455	16.7523064089612	55	3
+group_fruits	numerical	158.9986184	200.391851106364	169.805025369189	55	3
+group_legumes	numerical	2.22	9.11672727272727	19.5102453668859	55	3
+group_meat	numerical	84.78938376	86.1642936345091	45.3783101521785	55	3
+group_nonalc_drinks	numerical	96.37649088	253.961124629091	372.015546387045	55	3
+group_nuts	numerical	6.135045299	9.75447786830909	12.9407351548393	55	3
+group_pasta	numerical	15.85	23.0230909090909	26.0888966642564	55	3
+group_pastry	numerical	28.50198757	32.5625720860364	23.0658957692651	55	3
+group_potatoes	numerical	80.1399383	90.5148633557818	62.1939715467546	55	3
+group_prepared_meal	numerical	18.29328119	35.4898756184545	46.9108260811333	55	3
+group_rice	numerical	9.91	20.6076363636364	24.7302304854872	55	3
+group_sauces	numerical	10.09294793	16.3605984698545	18.642591816199	55	3
+group_savoury_snacks	numerical	13.98331462	18.6460340052727	18.0048473603517	55	3
+group_soup	numerical	35.75	47.6363636363636	50.5659822470212	55	3
+group_spreads	numerical	22.574	24.3296972727273	21.1568881151565	55	3
+group_sugar_sweets	numerical	30.84737756	33.2166340496545	25.3253300597256	55	3
+group_tea	numerical	348.38	325.674727272727	248.350881936667	55	3
+group_vegetables	numerical	108.9360804	108.536363688745	68.5233754431577	55	3
+SUMOFKCAL	numerical	1804	1915.14545454545	662.271299957559	55	3
+SUMOFKJ	numerical	7564	8032.14545454545	2775.40754710461	55	3
+SUMOFEIWITTOT	numerical	64.4	67.4545454545455	22.7739277357197	55	3
+SUMOFEIWITPLANT	numerical	25.8	28.3527272727273	11.7584934558033	55	3
+SUMOFEIWITDIER	numerical	37.7	39.1981818181818	14.6290995002615	55	3
+SUMOFVETTOT	numerical	70.9	77.1963636363636	31.0720903922926	55	3
+SUMOFKHTOT	numerical	207	221.081818181818	83.968115842351	55	3
+SUMOFALCOHOL	numerical	1.2	3.18727272727273	5.43984117910367	55	3
+Prot_en	numerical	14.356622895	14.2486546343148	2.26184363353326	54	4
+P_plant_en	numerical	5.7858028415	5.90697445998148	0.976086315597995	54	4
+P_animal_en	numerical	8.3116027795	8.36247740846296	2.26231105914143	54	4
+Fat_en	numerical	36.145390385	35.9350184766667	5.74592272737775	54	4
+Carb_en	numerical	46.307657915	46.30928868	7.06219373426878	54	4
+Alc_en	numerical	0.407900962	1.18260231488889	2.51268746304626	54	4
+ACE_inhibitor	categorical	no, yes	57, 1	98.28, 1.72	58	0
+alpha_blockers	categorical	no, yes	58, 0	100, 0	58	0
+angII_receptor_antagonist	categorical	no, yes	56, 2	96.55, 3.45	58	0
+anti_androgen_oral_contraceptive	categorical	no, yes	57, 1	98.28, 1.72	58	0
+anti_epileptics	categorical	no, yes	58, 0	100, 0	58	0
+anti_histamine	categorical	no, yes	54, 4	93.1, 6.9	58	0
+antibiotics_merged	categorical	no, yes	54, 4	93.1, 6.9	58	0
+benzodiazepine_derivatives_related	categorical	no, yes	55, 3	94.83, 5.17	58	0
+beta_blockers	categorical	no, yes	50, 8	86.21, 13.79	58	0
+beta_sympathomimetic_inhaler	categorical	no, yes	55, 3	94.83, 5.17	58	0
+bisphosphonates	categorical	no, yes	54, 4	93.1, 6.9	58	0
+ca_channel_blocker	categorical	no, yes	56, 2	96.55, 3.45	58	0
+calcium	categorical	no, yes	46, 12	79.31, 20.69	58	0
+ferrum	categorical	no, yes	52, 6	89.66, 10.34	58	0
+folic_acid	categorical	no, yes	54, 4	93.1, 6.9	58	0
+insulin	categorical	no, yes	56, 2	96.55, 3.45	58	0
+IUD_that_includes_hormones	categorical	no, yes	58, 0	100, 0	58	0
+K_saving_diuretic	categorical	no, yes	57, 1	98.28, 1.72	58	0
+laxatives	categorical	no, yes	55, 3	94.83, 5.17	58	0
+melatonine	categorical	no, yes	58, 0	100, 0	58	0
+mesalazines	categorical	no, yes	53, 5	91.38, 8.62	58	0
+metformin	categorical	no, yes	56, 2	96.55, 3.45	58	0
+methylphenidate	categorical	no, yes	58, 0	100, 0	58	0
+NSAID	categorical	no, yes	56, 2	96.55, 3.45	58	0
+opiat	categorical	no, yes	56, 2	96.55, 3.45	58	0
+oral_anti_diabetics	categorical	no, yes	58, 0	100, 0	58	0
+oral_contraceptive	categorical	no, yes	57, 1	98.28, 1.72	58	0
+oral_steroid	categorical	no, yes	50, 8	86.21, 13.79	58	0
+other_antidepressant	categorical	no, yes	54, 4	93.1, 6.9	58	0
+paracetamol	categorical	no, yes	56, 2	96.55, 3.45	58	0
+parasympathicolytic_inhaler	categorical	no, yes	57, 1	98.28, 1.72	58	0
+platelet_aggregation_inhibitor	categorical	no, yes	54, 4	93.1, 6.9	58	0
+PPI	categorical	no, yes	38, 20	65.52, 34.48	58	0
+SSRI_antidepressant	categorical	no, yes	58, 0	100, 0	58	0
+statin	categorical	no, yes	55, 3	94.83, 5.17	58	0
+steroid_inhaler	categorical	no, yes	56, 2	96.55, 3.45	58	0
+steroid_nose_spray	categorical	no, yes	56, 2	96.55, 3.45	58	0
+thiazide_diuretic	categorical	no, yes	57, 1	98.28, 1.72	58	0
+thyrax	categorical	no, yes	55, 3	94.83, 5.17	58	0
+tricyclic_antidepressant	categorical	no, yes	58, 0	100, 0	58	0
+triptans	categorical	no, yes	58, 0	100, 0	58	0
+vitamin_B12	categorical	no, yes	45, 13	77.59, 22.41	58	0
+vitamin_D	categorical	no, yes	44, 14	75.86, 24.14	58	0
+vitamin_K_antagonist	categorical	no, yes	56, 2	96.55, 3.45	58	0
+Sequenced	categorical	no, yes	19, 39	32.76, 67.24	58	0
+MissingSample	categorical	no, yes	58, 0	100, 0	58	0
+FrequencyFormedStoolDay	numerical	0	0.254545454545455	0.775031225611846	55	3
+FrequencySoftStoolDay	numerical	0	1.98214285714286	2.75345119922135	56	2
+FrequencyFormedstoolNight	numerical	0	0.163636363636364	0.739460172559244	55	3
+FrequencySoftstoolNight	numerical	0	0.345454545454545	1.09236715131223	55	3
+RetentStool	categorical	Hurry, Immediately, Incontinence, yes	6, 0, 4, 10	30, 0, 20, 50	20	38
+BloodinStool	categorical	no, OftenClearly, SometimesClearly, TraceOfBlood	52, 0, 4, 2	89.66, 0, 6.9, 3.45	58	0
+MucusinStool	categorical	no, Often, sometimes	41, 4, 13	70.69, 6.9, 22.41	58	0
+PainfulUrgeDefecation	categorical	mild, no, severe	4, 54, 0	6.9, 93.1, 0	58	0
+AnalPain	categorical	mild, no, severe	10, 48, 0	17.24, 82.76, 0	58	0
+IncludedSamplesMGS	categorical	no, yes	56, 2	96.55, 3.45	58	0
+AppendixInSitu	categorical	no, yes	22, 36	37.93, 62.07	58	0
+how_often_boiled_potatos	numerical	5.5	5.02	1.54510418379328	50	8
+how_often_crisps_savory_crackers	numerical	3	3.36	1.45349683908307	50	8
+how_often_fish	numerical	3	2.82	1.24030937549419	50	8
+how_often_juice	numerical	3	3.58	2.25053281673111	50	8
+how_often_meat	numerical	6	6	0.989743318610787	50	8
+osteoporosis	numerical	0	0.0344827586206897	0.184059224009919	58	0
+how_often_baked_fried_potatoes	numerical	4	3.58	1.10822527732683	50	8
+how_often_chocolate	numerical	3	3.52	1.64428509370722	50	8
+how_often_eggs	numerical	4	3.78	1.13010745380378	50	8
+how_often_icecream	numerical	2	2.04	1.27711409363583	50	8
+how_often_pizza	numerical	2	1.94	0.912721876855045	50	8
+how_often_soda.1	numerical	5	4.98	1.9004832897697	50	8
+how_often_tea.1	numerical	7	6.04	1.81782556806707	50	8
+EverHadStomaOrPouch	categorical	no, yes	2, 56	3.45, 96.55	58	0
+CurrentStoma	categorical	no, yes	12, 46	20.69, 79.31	58	0
+CurrentPouch	categorical	no, yes	49, 9	84.48, 15.52	58	0
+CurrentStomaOrPouchType	categorical	colostoma, ileostoma, none, pouch	1, 45, 4, 8	1.72, 77.59, 6.9, 13.79	58	0
+category	numerical	3	3	0	58	0

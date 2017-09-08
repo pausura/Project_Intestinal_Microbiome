@@ -64,7 +64,7 @@ ns_test      ## DUDes: p-value = 2.2e-16 --> significative differences - normal/
 filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax_DUDes.txt", sep = "\t", header = T, row.names = 1, check.names = F)
 
   #Actinobacteria
-  name_column <- "k__Bacteria|p__Actinobacteria"
+  name_column <- "p__Actinobacteria"
   actinobacteria <- subset(filum_table, select = name_column)
     actinobacteria <- merge(actinobacteria, intestinal_groups, by = "row.names")
       rownames(actinobacteria) <- actinobacteria[,1]
@@ -72,7 +72,7 @@ filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax
   colnames(actinobacteria)[1] <- "rel_abun"
       
   #Bacteroidetes
-  name_column <- "k__Bacteria|p__Bacteroidetes"
+  name_column <- "p__Bacteroidetes"
   bacteroidetes <- subset(filum_table, select = name_column)
     bacteroidetes <- merge(bacteroidetes, intestinal_groups, by = "row.names")
       rownames(bacteroidetes) <- bacteroidetes[,1]
@@ -80,7 +80,7 @@ filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax
   colnames(bacteroidetes)[1] <- "rel_abun"
   
   #Firmicutes
-  name_column <- "k__Bacteria|p__Firmicutes"
+  name_column <- "p__Firmicutes"
   firmicutes <- subset(filum_table, select = name_column)
     firmicutes <- merge(firmicutes, intestinal_groups, by = "row.names")
       rownames(firmicutes) <- firmicutes[,1]
@@ -88,7 +88,7 @@ filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax
   colnames(firmicutes)[1] <- "rel_abun"
   
   #Proteobacteria
-  name_column <- "k__Bacteria|p__Proteobacteria"
+  name_column <- "p__Proteobacteria"
   proteobacteria <- subset(filum_table, select = name_column)
     proteobacteria <- merge(proteobacteria, intestinal_groups, by = "row.names")
       rownames(proteobacteria) <- proteobacteria[,1]
@@ -96,7 +96,7 @@ filum_table <- read.table("~/Documents/Universitat/Holanda/Projecte/filtered_tax
   colnames(proteobacteria)[1] <- "rel_abun"   
       
   ## Normal - Intermediate
-intermediate_normal <- proteobacteria[!(proteobacteria$Group=="small intestine"),]
+intermediate_normal <- proteobacteria[!(proteobacteria$Group=="ileal"),]
 in_test <- wilcox.test(rel_abun ~ Group,  data = intermediate_normal, paired = FALSE) 
 in_test     
   
@@ -106,7 +106,7 @@ ns_test <- wilcox.test(rel_abun ~ Group,  data = normal_small, paired = FALSE)
 ns_test       
   
   ## Intermediate - Small intestine
-intermediate_small <- proteobacteria[!(proteobacteria$Group=="normal"),]
+intermediate_small <- proteobacteria[!(proteobacteria$Group=="colonic"),]
 is_test <- wilcox.test(rel_abun ~Group, data = intermediate_small, paired = FALSE)
 is_test
       
